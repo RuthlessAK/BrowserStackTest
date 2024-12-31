@@ -6,9 +6,9 @@ import org.apache.commons.io.FileUtils;
 
 public class DownloadUtils {
 
-    public static void downloadImage(String imageURL,int articleNuber) {
+    public static void downloadImage(String imageURL,int articleNumber) {
         try {
-            FileUtils.copyURLToFile(new URL(imageURL), new File("./Images/CoverImage_Article"+articleNuber+".jpg"));
+            FileUtils.copyURLToFile(new URL(imageURL), new File("./Images/CoverImage_Article"+articleNumber+".jpg"));
         } catch (IOException e){
             throw new RuntimeException(e);
         }
