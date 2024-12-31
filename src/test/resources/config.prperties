@@ -1,0 +1,8 @@
+#Config File
+
+
+browser = CHROME
+websiteURL=https://elpais.com/
+baseUri=https://translation.googleapis.com/language/translate/v2
+sourceLanguage=es
+targetLanguage=en

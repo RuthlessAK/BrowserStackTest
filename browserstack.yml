@@ -1,0 +1,31 @@
+userName: ankitkothiyal_mg9F5n
+accessKey: rFTMyoUdxxwyaz1CvJaU
+platforms:
+  - os: Windows
+    osVersion: 10
+    browserName: Chrome
+    browserVersion: 120.0
+  - os: Windows
+	osVersion: 10
+	browserName: Firefox
+	browserVersion: 133.0	
+  - os: OS X
+    osVersion: Monterey
+    browserName: Safari
+    browserVersion: 15.6
+  - os: Windows
+	osVersion: 11
+	browserName: Edge
+	browserVersion: 131.0
+  - deviceName: iPhone 13
+    osVersion: 15
+    browserName: Chromium
+    deviceOrientation: portrait
+browserstackLocal: true
+buildName: BuildNumber
+buildIdentifier: ${BUILD_NUMBER}
+projectName: BrowserStack
+debug: true
+networkLogs: true
+consoleLogs: info
+parallelsPerPlatform: 5
