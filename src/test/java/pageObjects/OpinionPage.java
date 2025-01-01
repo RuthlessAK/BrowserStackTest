@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -51,7 +52,12 @@ public class OpinionPage {
 	 * @return
 	 */
 	public String extractContent(WebElement article) {
-		return article.findElement(By.xpath("p")).getText();
+		try {
+			return article.findElement(By.xpath("p")).getText();
+		}catch (StaleElementReferenceException e) {
+			return article.findElement(By.xpath("p")).getText();
+		}
+		
 	}
 	
 	public WebElement getArticleImage(WebElement article) {
@@ -77,11 +83,25 @@ public class OpinionPage {
 		}
 
 		for (int i = 0; i < numberOfArticles; i++) {
-			String title = extractTitle(articles.get(i));
+			String title;
+			String content;
+			try {
+				title = extractTitle(articles.get(i));
+			}catch (StaleElementReferenceException e) {
+				articles = fetchArticles();
+				title = extractTitle(articles.get(i));
+			}
 			System.out.println("Spanish Title for article " + ( i + 1) +" : "+ title);
 			String translatedTitle = TranslationUtils.translateText(title);
 			System.out.println("Translated English Title for article " + (i+1) +" : "+ translatedTitle);
-			String content = extractContent(articles.get(i));
+			try {
+				content = extractContent(articles.get(i));
+			}catch (StaleElementReferenceException e) {
+				articles = fetchArticles();
+				content = extractContent(articles.get(i));
+			}
+			
+//			String content = extractContent(articles.get(i));
 			System.out.println("Spanish Content for article " + (i + 1) +" : "+ content);
 			translatedHeaders.add(translatedTitle);
 			WebElement img = getArticleImage(articles.get(i));

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-31T22:52:15 IST" name="Default suite" finished-at="2024-12-31T22:52:53 IST" duration-ms="37529">
+  <suite started-at="2025-01-01T15:26:17 IST" name="Suite" finished-at="2025-01-01T15:26:58 IST" duration-ms="40378">
     <groups>
     </groups>
-    <test started-at="2024-12-31T22:52:15 IST" name="Default test" finished-at="2024-12-31T22:52:53 IST" duration-ms="37529">
+    <test started-at="2025-01-01T15:26:17 IST" name="Test" finished-at="2025-01-01T15:26:58 IST" duration-ms="40378">
       <class name="testCases.TC_001_WebScraper">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:testCases.TC_001_WebScraper@1fa121e2]" started-at="2024-12-31T22:52:15 IST" name="setUpDriver" finished-at="2024-12-31T22:52:22 IST" duration-ms="6999" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:testCases.TC_001_WebScraper@3d97a632]" started-at="2025-01-01T15:26:17 IST" name="setUpDriver" finished-at="2025-01-01T15:26:26 IST" duration-ms="8857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="scrapingArticle()[pri:0, instance:testCases.TC_001_WebScraper@1fa121e2]" started-at="2024-12-31T22:52:22 IST" name="scrapingArticle" finished-at="2024-12-31T22:52:52 IST" duration-ms="29750" status="PASS">
+        <test-method signature="scrapingArticle()[pri:0, instance:testCases.TC_001_WebScraper@3d97a632]" started-at="2025-01-01T15:26:26 IST" name="scrapingArticle" finished-at="2025-01-01T15:26:56 IST" duration-ms="30122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrapingArticle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_WebScraper@1fa121e2]" started-at="2024-12-31T22:52:52 IST" name="tearDown" finished-at="2024-12-31T22:52:53 IST" duration-ms="680" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_WebScraper@3d97a632]" started-at="2025-01-01T15:26:56 IST" name="tearDown" finished-at="2025-01-01T15:26:58 IST" duration-ms="1334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_001_WebScraper -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

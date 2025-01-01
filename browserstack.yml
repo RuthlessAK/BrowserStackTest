@@ -1,5 +1,6 @@
 userName: ankitkothiyal_mg9F5n
 accessKey: rFTMyoUdxxwyaz1CvJaU
+framework: testng
 platforms:
   - os: Windows
     osVersion: 10
@@ -24,8 +25,19 @@ platforms:
 browserstackLocal: true
 buildName: BuildNumber
 buildIdentifier: ${BUILD_NUMBER}
-projectName: BrowserStack
+projectName: BrowserStack Sample
+testObservability: true
+networkLogs: true
+consoleLogs: info
+percy: false
+percyCaptureMode: auto
 debug: true
 networkLogs: true
 consoleLogs: info
 parallelsPerPlatform: 5
+
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+testObservability: true
+
+source: testng:eclipse:v1.0.8
